@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="header">
+      <div class="container container-header">
+        <nav class="header-nav">
+          <a href="index.html" class="link logo">Web<span class="logo-black">Studio</span></a>
+
+          <ul class="nav-list list">
+            <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
+
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link link-current">Портфолио</a>
+            </li>
+
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contact-list list">
+          <li class="contact-item">
+            <a class="link mail-link" href="mailto:nfo@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./imeges/icon.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a class="link phone-link" href="tel:380961111111"
+              ><svg class="contact-icon" width="10" height="16">
+                <use href="./imeges/icon.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!--Фильтры работ-->
+    <main>
+      <section class="section projects">
+        <div class="container">
+          <h1 class="hidden-title">Портфолио</h1>
+
+          <ul class="filter-list list">
+            <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
+
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+
+            <li class="filter-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+
+            <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
+
+            <li class="filter-item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="project-list card-set list">
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt.jpg"
+                    alt="Веб-сайт с портфолио"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="option">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt1.jpg"
+                    alt="два баскетболиста"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="option">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt2.jpg"
+                    alt="логотип ресторана"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="option">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt3.jpg"
+                    alt="наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Проект Prime</h2>
+                  <p class="option">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt4.jpg"
+                    alt="две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Проект Boxes</h2>
+                  <p class="option">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt5.jpg"
+                    alt="монитор"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="option">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt6.jpg"
+                    alt="страница из журнала"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Издание Limited Edition</h2>
+                  <p class="option">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt7.jpg"
+                    alt="бирка"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p class="option">Маркетин</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item project-item">
+              <a class="link project-link" href="" target="_blank" rel="noreferrer noopener">
+                <div class="project-thumb">
+                  <img
+                    class="img"
+                    src="./imeges/projekt8.jpg"
+                    alt="включенный ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="project-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="content-project">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="option">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-item">
+          <a href="index.html" class="link logo"> Web<span class="logo-white">Studio</span></a>
+
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  href="https://goo.gl/maps/vgJWgrSwiw7rU1Lq5"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="link address-link"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+
+              <li class="address-item">
+                <a href="mailto:nfo@devstudio.com" class="link address-link">nfo@devstudio.com</a>
+              </li>
+
+              <li class="address-item">
+                <a href="tel:380961111111" class="link address-link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-item">
+          <h2 class="footer-title">присоединяйтесь</h2>
+          <ul class="social-list card-set list">
+            <li class="item social-item">
+              <a class="link footer-link social-link" href=""
+                ><svg class="social-icon" width="20" height="20">
+                  <use href="./imeges/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item social-item">
+              <a href="" class="link footer-link social-link"
+                ><svg class="social-icon" width="20" height="20">
+                  <use href="./imeges/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item social-item">
+              <a href="" class="link footer-link social-link"
+                ><svg class="social-icon" width="20" height="20">
+                  <use href="./imeges/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item social-item">
+              <a href="" class="link footer-link social-link"
+                ><svg class="social-icon" width="20" height="20">
+                  <use href="./imeges/icon.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item footer-social">
+          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <form class="footer-form">
+            <input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button class="order" type="submit">
+              Подписаться
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./imeges/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
