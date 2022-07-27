@@ -1,0 +1,32 @@
+.section-team {
+
+    background-color: $portfolio-btn-cl;
+}
+
+.team-list__item {
+    $card-item: 4;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__content {
+    padding: $set-gap;
+    text-align: center;
+    background-color: $primery-bg-cl;
+}
+
+.team-list__title,
+.team-list__specialty {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+}
+
+.team-list__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: $title-text-cl;
+}
+
+.team-list__specialty {
+    margin-bottom: 16px;
+}
