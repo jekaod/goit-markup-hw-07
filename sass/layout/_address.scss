@@ -1,0 +1,18 @@
+.address {
+
+    color: rgba(255, 255, 255, 0.6);
+    font-style: inherit;
+}
+
+.address__link {
+    color: $primery-bg-cl;
+    transition: color $transition;
+
+    &:hover, &:focus {
+    color: $accent-cl
+}
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
