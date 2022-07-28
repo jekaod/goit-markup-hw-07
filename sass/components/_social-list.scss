@@ -1,6 +1,6 @@
 .social-list {
     gap: 10px;
-    $card-item: 4;
+    --card-item: 4;
 
 }
 
@@ -14,7 +14,7 @@
     fill: $social-icon-cl;
     background-color: $primery-bg-cl;
     border-radius: 50%;
-    transition: fill var(--transition), background-color var(--transition);
+    transition: fill $transition, background-color $transition;
     &:hover, &:focus {
     fill: $primery-bg-cl;
     background-color: $accent-cl; 
