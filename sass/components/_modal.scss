@@ -45,3 +45,55 @@
     text-align: center;
     color: $title-text-cl;
 }
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: calc(24 / 14);
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+.field__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    transition: border $transition;
+}
+
+.field__icon {
+
+    margin-right: 9px;
+    border-radius: 4px;
+    border: 2px solid $title-text-cl;
+    transition: border $transition;
+
+    .field__input:hover~&,
+    .field__input:focus~& {
+        border: 2px solid $accent-cl;
+    }
+
+    .field__input:checked+& {
+
+        background-color: $accent-cl;
+        background-position: center;
+        border: 2px solid $accent-cl;
+        transition: fill $transition;
+
+    }
+}
+
+.field__link {
+    color: $accent-cl;
+}
