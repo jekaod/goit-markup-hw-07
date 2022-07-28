@@ -11,8 +11,13 @@
     &--black {
             color: $title-text-cl;
         }
-                &--white {
-                    color: $primery-bg-cl;
+    &--white {
+            color: $primery-bg-cl;
         
                 }
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    display: block;
 }
