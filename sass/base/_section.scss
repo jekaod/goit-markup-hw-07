@@ -1,15 +1,6 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .section-title {
+    @include fonts(36px, 700, 1.166);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $title-text-cl;
-    text-align: center;
 }

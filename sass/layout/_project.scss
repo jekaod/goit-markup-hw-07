@@ -1,4 +1,10 @@
+.project{
+    @extend %section;
+}
+
 .project-filter__list {
+    @extend %reset-list;
+
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -6,18 +12,14 @@
     justify-content: center;
 }
 
-.project-filter__button {
 
+.project-filter__button {
+    @include fonts(16px, 500, 1.625);
     padding: 6px 22px;
     border-radius: 4px;
     border: none;
-
-    font-weight: 500;
-    font-size: 16px;
     font-family: inherit;
-    line-height: calc(26 / 16);
     text-align: center;
-    letter-spacing: 0.03em;
     cursor: pointer;
     color: $title-text-cl;
     background-color: $portfolio-btn-cl;
@@ -30,8 +32,16 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 }
-
+.project__list{
+    @extend %reset-list;
+    @include card-set;
+}
+.project__item{
+    @include card-item;
+}
 .project__link {
+    @extend %reset-link;
+
     background-color: $primery-bg-cl;
     transition: filter $transition;
 
@@ -46,17 +56,13 @@
 }
 
 .project__title {
+    @include fonts(18px, 700, 2, 0.06em);
     margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
     color: $title-text-cl;
 }
 
 .project__label {
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    @include fonts(16px, null, 1.875);
 }
 
 .project__thumb {
@@ -65,16 +71,13 @@
 }
 
 .project__description {
-
+    @include fonts(18px, null, 1.555);
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 63px 24px;
     top: 0;
     left: 0;
-    font-size: 18px;
-    line-height: calc(28 / 18);
-    letter-spacing: 0.03em;
     color: $primery-bg-cl;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(+100%);

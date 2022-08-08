@@ -1,15 +1,17 @@
+.page-feature{
+    @extend %section;
+}
 
-
+.page-feature__list{
+    @extend %reset-list;
+    @include card-set;
+}
 .page-feature__item {
-    --card-item: 4;
-   
-    
+    @include card-item(4);
 }
 
 .page-feature__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered-flex();
     margin-bottom: 30px;
     width: 100%;
     height: 120px;
@@ -21,6 +23,8 @@
 
 
 .page-feature__label{
+    @include fonts(14px, 700, 1.142);
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
     color: $title-text-cl;

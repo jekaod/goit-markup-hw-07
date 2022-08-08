@@ -1,11 +1,9 @@
 .logo{
+    @extend %reset-link;
+    @include fonts(26px, 700, 1.192);
     display: block;
     color: $accent-cl;
     font-family: Raleway,cursive;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
     text-decoration: none;
 
     &--black {

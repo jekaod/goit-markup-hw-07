@@ -1,4 +1,6 @@
 .form-list {
+    @extend %reset-list;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -16,10 +18,8 @@
 }
 
 .form-list__label {
+    @include fonts(12px, null, 1.166, 0.01em);
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: calc(14 /12);
-    letter-spacing: 0.01em;
 }
 
 .form-list__input {
@@ -65,7 +65,6 @@
 &::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-
 }
 
 

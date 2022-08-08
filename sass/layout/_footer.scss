@@ -19,7 +19,9 @@
 }
 
 .footer-item__title {
+    @include fonts(14px , 700, 1.142);
     margin-bottom: 20px;
+    text-transform: uppercase;
     color: $primery-bg-cl;
 
 }

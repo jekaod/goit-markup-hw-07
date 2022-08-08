@@ -1,9 +1,12 @@
-.site-nav {
+.site-nav{
     display: flex;
     align-items: center;
 }
 
+
 .site-nav__list {
+    @extend %reset-list;
+
     display: flex;
     padding-left: 0;
     margin-left: 93px;
@@ -14,6 +17,7 @@
 }
 
 .site-nav__link {
+    @extend %reset-link;
 
     display: block;
     padding-top: 32px;

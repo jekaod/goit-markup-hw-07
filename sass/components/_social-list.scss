@@ -1,14 +1,14 @@
 .social-list {
-    gap: 10px;
-    --card-item: 4;
-
+    @extend %reset-list;
+    @include card-set(10px);
+}
+.social-list__item{
+    @include card-item(4, 10px)
 }
 
-
 .social-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %reset-link;
+    @include centered-flex;
     width: 44px;
     height: 44px;
     fill: $social-icon-cl;

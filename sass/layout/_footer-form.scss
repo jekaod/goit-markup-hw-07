@@ -4,10 +4,8 @@
 }
 
 .footer-form__input {
+    @include fonts(16px, null, 1.25);
     padding: 12px 12px;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -1,10 +1,13 @@
 .page-team {
-
+    @extend %section;
     background-color: $portfolio-btn-cl;
 }
-
+.page-team__list{
+    @extend %reset-list;
+    @include card-set;
+}
 .page-team__item {
-    --card-item: 4;
+    @include card-item(4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -15,18 +18,14 @@
     background-color: $primery-bg-cl;
 }
 
-.page-team__title,
-.page-team__specialty {
-    font-size: 16px;
-    line-height: calc(19 / 16);
-}
-
 .page-team__title {
+    @include fonts(16px, 500, 1.187);
     margin-bottom: 10px;
-    font-weight: 500;
     color: $title-text-cl;
 }
-
+.page-team__specialty {
+    @include fonts(16px, null, 1.187);
+}
 .page-team__specialty {
     margin-bottom: 16px;
 }

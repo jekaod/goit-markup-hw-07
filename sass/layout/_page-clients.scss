@@ -1,11 +1,17 @@
-.page-client__list {
-    --card-item: 6
+.page-client{
+    @extend %section;
 }
 
+
+.page-client__list {
+    @extend %reset-list;
+    @include card-set;
+}
+.page-client__item{
+    @include card-item(6);
+}
 .page-client__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered-flex;
     width: 170px;
     height: 92px;
     border: 1px solid $social-icon-cl;

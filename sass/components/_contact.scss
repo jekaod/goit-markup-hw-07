@@ -1,4 +1,6 @@
 .contact {
+    @extend %reset-list;
+
     display: flex;
     padding-left: 0;
     margin-left: auto;
@@ -10,6 +12,8 @@
 }
 
 .contact__link {
+    @extend %reset-link;
+
     padding-top: 32px;
     padding-bottom: 32px;
     display: inline-flex;
@@ -20,9 +24,6 @@
     color: $accent-cl;
 }
 }
-
-
-
 .contact__icon {
     margin-right: 10px;
     fill: currentColor;
